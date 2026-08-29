@@ -1,0 +1,12 @@
+# Data directories — multi-GB, regenerable, never committed
+data/
+
+# Environment files with secrets or machine-specific paths
+.env
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
