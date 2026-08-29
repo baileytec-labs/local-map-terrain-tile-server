@@ -1,0 +1,7 @@
+{
+  "gev-terrain": {
+    "cog": "/data/mosaic.cog.tif",
+    "minZoom": 0,
+    "maxZoom": 15
+  }
+}
