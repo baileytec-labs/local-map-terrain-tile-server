@@ -15,6 +15,7 @@ services:
   gev-imagery:
     image: overv/openstreetmap-tile-server:latest
     container_name: gev-imagery
+    command: ["run"]
     environment:
       - THREADS=4
     volumes:
@@ -24,6 +25,8 @@ services:
     ports:
       - "8080:80"
     restart: unless-stopped
+    mem_limit: 4g
+    memswap_limit: 4g
 
   gev-terrain:
     image: ghcr.io/sogelink-research/ctod:latest

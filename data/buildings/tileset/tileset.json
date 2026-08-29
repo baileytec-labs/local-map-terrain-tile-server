@@ -1,0 +1,14 @@
+{
+  "asset": {
+    "version": "1.0",
+    "license": "https://aframe.io/license/"
+  },
+  "geometricError": 50,
+  "root": {
+    "boundingVolume": {
+      "region": [-97.85, 30.10, -97.55, 30.45, 0.0, 0.0]
+    },
+    "geometricError": 50,
+    "ref": "building.b3dm"
+  }
+}
