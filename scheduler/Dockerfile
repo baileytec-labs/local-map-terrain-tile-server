@@ -14,7 +14,10 @@
 FROM alpine:latest
 
 RUN apk add --no-cache docker-cli bash curl gdal aws-cli \
-    && apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community duckdb
+    && curl -fsSL https://github.com/duckdb/duckdb/releases/download/v1.3.1/duckdb_cli-linux-amd64.zip -o /tmp/duckdb.zip \
+    && unzip /tmp/duckdb.zip -d /usr/local/bin \
+    && chmod +x /usr/local/bin/duckdb \
+    && rm /tmp/duckdb.zip
 
 COPY crontab /etc/crontabs/root
 RUN chmod 0640 /etc/crontabs/root
