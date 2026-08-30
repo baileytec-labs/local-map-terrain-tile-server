@@ -25,8 +25,8 @@ services:
     ports:
       - "9876:80"
     restart: unless-stopped
-    mem_limit: 4g
-    memswap_limit: 4g
+    mem_limit: 12g
+    memswap_limit: 12g
 
   gev-terrain:
     image: ghcr.io/sogelink-research/ctod:latest
