@@ -6,7 +6,7 @@ for /f "usebackq tokens=1,2 delims==" %%A in (.env) do (
     set "%%A=%%B"
 )
 
-set BASE=http://localhost:5002
+set BASE=http://localhost:9878
 
 echo Testing 3D Buildings tileset.json and B3DM content...
 echo.

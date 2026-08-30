@@ -6,7 +6,7 @@ for /f "usebackq tokens=1,2 delims==" %%A in (.env) do (
     set "%%A=%%B"
 )
 
-set BASE=http://localhost:5001
+set BASE=http://localhost:9877
 
 echo Testing terrain layer.json and tile API...
 echo.

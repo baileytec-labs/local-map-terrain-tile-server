@@ -241,13 +241,13 @@ If you have a client app that consumes these tile formats, point its configurati
 
 ```bash
 # Imagery (XYZ tiles)
-OSM_TILE_BASE_URL=http://localhost:8080/tile
+ OSM_TILE_BASE_URL=http://localhost:9876/tile
 
 # Terrain (quantized-mesh)
-REARTHTERRAIN_BASE_URL=http://localhost:5001/tiles/gev-terrain
+REARTHTERRAIN_BASE_URL=http://localhost:9877/tiles/gev-terrain
 
 # Buildings (3D Tiles)
-BUILDINGS_TILESET_URL=http://localhost:5002/tileset.json
+BUILDINGS_TILESET_URL=http://localhost:9878/tileset.json
 ```
 
 ## Portability — moving to another machine

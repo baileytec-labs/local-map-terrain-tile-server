@@ -6,7 +6,7 @@ for /f "usebackq tokens=1,2 delims==" %%A in (.env) do (
     set "%%A=%%B"
 )
 
-set BASE=http://localhost:8080
+set BASE=http://localhost:9876
 
 :: Compute tile coordinates for the dev bbox center
 :: Center of Austin bbox: lon = (-97.85 + -97.55) / 2 = -97.7
